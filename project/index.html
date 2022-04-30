@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-<header>
-    <button class="btn-cart" type="button">Крзина</button>
-</header>
-<main>
-    <div class="products"></div>
-</main>
-<script src="./js/main.js"></script>
+    <header>
+        <div class="logo">Интернет-магазин</div>
+        <button class="btn-cart" type="button">Корзина</button>
+        <div class="openCart hidden">
+            <div class="infoCart">
+                <div>Название товара</div>
+                <div>Количество</div>
+                <div>Цена за шт.</div>
+                <div>Итого</div>
+            </div>
+            <div class="sumCart">
+                Товаров в корзине на сумму:
+                $<span class="cartValue">0</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="products"></div>
+    </main>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
